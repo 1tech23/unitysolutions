@@ -1,0 +1,74 @@
+body {
+        background-image: url("../images/background7.png");
+        font-family: sans-serif, helvetica;
+        color: #f3f3f3;
+      }
+      footer {
+        color: #ededed;
+        text-align: center;
+      }
+      ul {
+      text-align: left;
+      }
+      
+      .tab {
+        overflow: hidden;
+        border: black;
+        background-color: transparent;
+      }
+      .tab button {
+        background-color: transparent;
+        float: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.9s;
+        font-size: 17px;
+        color: #ededed;
+    }
+    .tab button:hover {
+        opacity: 5;
+        background-color: #708090;
+           /* color: black; */
+    }
+    .tab button.active {
+        opacity: 0.5;
+    }
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border-top: none;
+        border: 1px white;
+    }
+    button {
+        text-align: center;
+    }
+    .active {
+        background-color: gray;
+        opacity: 0.5;
+    }
+    a.tablink {
+        color: white;
+    }
+      a.tablink.active {
+        color: gray;
+      }
+a {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+        color: white;
+}
+
+a[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  top: -100%;
+  left: 0;
+        color: gray
+}
+
+a.active {
+        color: gray;
+}
